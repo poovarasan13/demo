@@ -29,7 +29,7 @@ app.get("/api", (req, res) => {
   res.send("API running");
 });
 app.get("/*", (req, res) => {
-  res.send("super");
+  res.send("super ahsdjahkdajhsdkashd");
 });
 
 module.exports = app;
