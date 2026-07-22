@@ -28,6 +28,6 @@ app.get("/api", (req, res) => {
   res.send("API running");
 });
 app.get("/*", (req, res) => {
-  res.send("API  running");
+  res.send("API  Not running");
 });
 module.exports = app;
