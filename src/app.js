@@ -10,6 +10,7 @@ const app = express();
 const corsOptions = {
   origin: process.env.CORS_ORIGIN || "*", // Allow all if not specified
   methods: ["GET", "POST", "PUT", "DELETE","QUERY", "OPTIONS"],
+  name: "Access-Control-Allow-Origin",
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 };
