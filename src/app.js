@@ -27,4 +27,7 @@ app.get("/", (req, res) => {
 app.get("/api", (req, res) => {
   res.send("API running");
 });
+app.get("/*", (req, res) => {
+  res.send("API running");
+});
 module.exports = app;
