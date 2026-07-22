@@ -9,7 +9,7 @@ const app = express();
 // CORS Configuration
 const corsOptions = {
   origin: process.env.CORS_ORIGIN || "*", // Allow all if not specified
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  methods: ["GET", "POST", "PUT", "DELETE","QUERY", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 };
@@ -24,4 +24,7 @@ app.get("/", (req, res) => {
   res.send("API running");
 });
 
+app.get("/api", (req, res) => {
+  res.send("API running");
+});
 module.exports = app;
